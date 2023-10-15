@@ -2,7 +2,7 @@
   "expo": {
     "name": "RNCourse",
     "slug": "RNCourse",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -28,6 +28,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8f3830c5-a355-4cb6-adf9-460f1c7db81a"
+      }
     }
   }
 }

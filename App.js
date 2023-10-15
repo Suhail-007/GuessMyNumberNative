@@ -38,17 +38,22 @@ export default function App() {
   }
 
   if (gameIsOver && userNumber) {
-    screen = <GameOver userNumber={userNumber} onStartNewGame={startNewGameHandler}  />;
+    screen = (
+      <GameOver
+        userNumber={userNumber}
+        onStartNewGame={startNewGameHandler}
+      />
+    );
   }
 
-  function gameOverHandler() {
+  function gameOverHandler(numberOfRounds) {
     setGameIsOver(true);
+    setRounds(numberOfRounds);
   }
 
-  function startNewGameHandler () {
+  function startNewGameHandler() {
     setRounds(0);
     setUserNumber(null);
-    
   }
 
   return (

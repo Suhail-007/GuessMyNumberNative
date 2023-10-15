@@ -38,7 +38,7 @@ const GameScreen = ({ userSelectedNumber, onGameOver }) => {
 
   useEffect(() => {
     if (userSelectedNumber === currentGuess) {
-      onGameOver();
+      onGameOver(guess.length);
     }
   }, [currentGuess, userSelectedNumber, onGameOver]);
 
