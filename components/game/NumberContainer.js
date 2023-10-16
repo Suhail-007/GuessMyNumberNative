@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     alignItems: "center",
     justifyContent: "center",
-    marginHorizontal: deviceWidth < 380 ? 24 : "auto",
+    marginHorizontal: deviceWidth < 380 ? 24 : 48,
   },
   numberText: {
     color: COLORS.accent300,

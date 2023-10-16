@@ -1,14 +1,10 @@
 import { useState, useEffect, useMemo } from "react";
 import { StyleSheet, View, Alert, FlatList, useWindowDimensions } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
 
 import Title from "../components/UI/Title/Title";
-import NumberContainer from "../components/game/NumberContainer";
-import PrimaryButton from "../components/UI/Buttons/PrimaryButton";
-import InstructionText from "../components/UI/InstructionText";
 import GuessLog from "./../components/game/GuessLog";
-import LandscapeGameScreen from "./Oritentation/Landscape/LandscapeGameScreen";
-import PortraitGameScreen from "./Oritentation/Portrait/PortraitGameScreen";
+import LandscapeGameScreen from "./Orientation/Landscape/LandscapeGameScreen";
+import PortraitGameScreen from "./Orientation/Portrait/PortraitGameScreen";
 
 function generateRandomNumber(min, max, exclude) {
   const rndNum = Math.floor(Math.random() * (max - min)) + min;
